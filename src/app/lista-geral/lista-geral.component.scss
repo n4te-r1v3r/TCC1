@@ -1,0 +1,61 @@
+.ativos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .list-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    h3 {
+      margin-top: 0;
+    }
+    .btn-add {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    .list-item-ativos {
+      padding: 15px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      .item-content {
+        h4 {
+          margin: 0 0 5px;
+          color: #444;
+        }
+        p {
+          margin: 0;
+          color: #666;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 20px;
+      .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ccc;
+        color: #333;
+        cursor: pointer;
+        &:hover {
+          background-color: #aaa;
+        }
+      }
+    }
+  }

@@ -1,0 +1,53 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    h3 {
+      margin-top: 0;
+      color: #444;
+    }
+  }
+  
+  .call-list {
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      span {
+        color: #666;
+      }
+      .progress-bar {
+        width: 50%;
+        height: 8px;
+        background-color: #ddd;
+        border-radius: 4px;
+      }
+    }
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+    .bar-chart {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      height: 100%;
+      .bar {
+        width: 20px;
+        background-color: #666;
+        border-radius: 5px 5px 0 0;
+      }
+    }
+  }
